@@ -1,0 +1,85 @@
+.bg-color-blue {
+  background-color: blue;
+}
+
+.bg-color-yellow {
+  background-color: yellow;
+}
+
+.bg-color-red {
+  background-color: red;
+}
+
+.fg-color-white {
+  color: whitesmoke;
+}
+
+.dimension-portrait {
+  width: 50px;
+  height: 100px;
+}
+
+.dimension-landscape {
+  width: 100px;
+  height: 50px;
+}
+
+.dimension-square {
+  width: 100px;
+  height: 100px;
+}
+
+/* Positioning policies
+    1. Relative to current position (relative: current position of me is 0,0)
+    2. Relative to document (absolute: top-left of screen is 0,0; scrolling affects position)
+    3. Relative to window (fixed: actual window of browser;
+          scrolling does not move the element -> menus, headers)
+*/
+.position-relative {
+  position: relative;
+}
+
+.position-absolute {
+  position: absolute;
+}
+
+.position-fixed {
+  position: fixed;
+}
+
+.move-down-50px {
+  /* From the TOP 50px -> depends on whether REL, ABS or FIX */
+  top: 50px;
+}
+
+.move-up-50px {
+  bottom: 50px;
+}
+
+.move-right-25px {
+  left: 25px;
+}
+
+.move-left-25px {
+  right: 25px;
+}
+
+.top-0 {
+  top: 0px;
+}
+
+.bottom-0 {
+  bottom: 0px;
+}
+
+.left-0 {
+  left: 0px;
+}
+
+.right-0 {
+  right: 0px;
+}
+
+.move-to-top {
+  z-index: 100;
+}
