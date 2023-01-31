@@ -1,0 +1,284 @@
+/*
+  p {
+    background-color: hotpink;
+    color: saddlebrown;
+  }
+*/
+
+p#id-selector-1 {
+  background-color: red;
+  color: white; /* Foreground color of element */
+}
+
+p#id-selector-2 {
+  background-color: yellow;
+  color: black;
+}
+
+.class-selector {
+  background-color: yellow;
+  color: blue;
+}
+
+/* Refers to .selector-3 as a descendant of .selector-1   */
+.selector-1 .selector-3 {
+  background-color: red;
+  color: white;
+}
+
+/* Refers to .selector-4 as a direct child of .selector-3 which is a direct child of .selector-2 */
+.selector-2 > .selector-3 > .selector-4 {
+  background-color: yellow;
+  color: blue;
+}
+
+/* Foreground colors */
+.fg-color-black {
+  color: black;
+}
+
+.fg-color-white {
+  color: white;
+}
+
+.fg-color-blue {
+  color: #7070ff;
+}
+
+.fg-color-red {
+  color: #ff7070;
+}
+
+.fg-color-green {
+  color: green;
+}
+
+/* Background colors */
+.bg-color-yellow {
+  background-color: #ffff07;
+}
+
+.bg-color-blue {
+  background-color: #7070ff;
+}
+
+.bg-color-red {
+  background-color: #ff7070;
+}
+
+.bg-color-green {
+  background-color: green;
+}
+
+/* Border Styles */
+/* Width */
+.border-fat {
+  border-width: 20px 30px 20px 30px;
+}
+
+.border-thin {
+  border-width: 4px;
+}
+
+/* Style */
+.border-solid {
+  border-style: solid;
+}
+
+.border-dashed {
+  border-style: dashed;
+}
+
+/* Color */
+.border-yellow {
+  border-color: #ffff07;
+}
+
+.border-red {
+  border-color: #ff7070;
+}
+
+.border-blue {
+  border-color: #7070ff;
+}
+
+/* Padding */
+.padded-top-left {
+  padding-top: 50px;
+  padding-left: 50px;
+}
+
+.padded-bottom-right {
+  padding-bottom: 50px;
+  padding-right: 50px;
+}
+
+.padding-fat {
+  padding: 50px;
+}
+
+/* Margin */
+.margin-bottom {
+  margin-bottom: 50px;
+}
+
+.margin-right-left {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.margin-all-around {
+  margin: 30px;
+}
+
+/* Border Corner styling */
+.rounded-corners-top {
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+}
+
+.rounded-corners-bottom {
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+}
+
+.rounded-corners-all-around {
+  border-radius: 25px;
+}
+
+.rounded-corners-inline {
+  border-radius: 30px 0px 20px 50px;
+}
+
+/* Dimensions */
+.dimension-portrait {
+  width: 75px;
+  height: 100px;
+}
+
+.dimension-landscape {
+  width: 100px;
+  height: 75px;
+}
+
+.dimension-square {
+  width: 75px;
+  height: 75px;
+}
+
+/* Position -> Relative, Absolute, and Static */
+/* 1. Relative: Setting position property to relative allows moving the element
+               [relative to its original position]
+*/
+.pos-relative-nudge-up-right {
+  position: relative;
+  bottom: 30px; /* Push from BOTTOM */
+  left: 30px; /* Push from LEFT */
+}
+
+.pos-relative-nudge-down-right {
+  position: relative;
+  top: 20px; /* Push from TOP */
+  left: 20px; /* Push from LEFT */
+}
+
+.pos-relative {
+  position: relative; /* Relative to itself */
+}
+
+/* 2. Absolute: Setting position property to absolute allows moving the element
+            [relative to the position of its parent]
+*/
+.pos-absolute-10-10 {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.pos-absolute-50-50 {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+}
+
+.pos-absolute-120-20 {
+  position: absolute;
+  top: 20px;
+  left: 120px;
+}
+
+/* 3. Fixed: Setting position property to fixed allows setting the element
+           [relative to the window]
+      That means that if you scroll the content of the page, the element will not scroll with it.
+*/
+.pos-fixed {
+  position: fixed;
+  right: 0px;
+  bottom: 50%;
+}
+
+/* Z-Index Styling */
+/*
+  When the browser renders content declared in HTML documents, it calculates positions and
+  dimensions so every element has a dedicated rectangle on the window.
+
+  Typically elements don't fall on top of each other. When you start moving elements with position,
+  then overlapping elements are possible. By default elements are rendered in the order declared in
+  HTML documents. Elements declared later render on top of elements declared earlier.
+
+  The z-index CSS property overrides this behavior. Default value of z-index is auto,
+   which corresponds to 0. Increasing z-index can make elements render later, or on top of, others.
+*/
+.zindex-bring-to-front {
+  z-index: 10; /* Value > 0 */
+}
+
+/* Floating Content - Horizontal ordering of elements */
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+  height: 100px;
+}
+
+/* Make sure that there are no elements to the right or left of this float element/group */
+.float-done {
+  clear: both;
+}
+
+/* Grid Layout Styling */
+.grid-row {
+  clear: both;
+}
+
+.grid-col-half-page {
+  width: 50%;
+  float: left;
+}
+
+.grid-col-third-page {
+  width: 33%;
+  float: left;
+}
+
+.grid-col-two-thirds-page {
+  width: 67%;
+  float: left;
+}
+
+.grid-col-left-sidebar {
+  width: 20%;
+  float: left;
+}
+
+.grid-col-main-content {
+  width: 60%;
+  float: left;
+}
+
+.grid-col-right-sidebar {
+  width: 20%;
+  float: left;
+}
