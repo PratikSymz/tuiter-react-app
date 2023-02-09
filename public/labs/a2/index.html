@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>A2 Lab</title>
+	</head>
+	
+	<body>
+		<a href="/">Back to Main</a><br/>
+		
+		<h1>HTML Examples</h1>
+		
+		<h2>Heading Tags</h2>
+		
+		<!-- White spaces are ignored -->
+		
+		Text documents are often broken up into several sections and subsections. Each section is
+		usually prefaced with a short title or heading that attempts to summarize the topic of the
+		section it precedes. For instance this paragraph is preceded by the heading Heading Tags. The
+		font of the section headings are usually larger and bolder than their subsection headings. This
+		document uses headings to introduce topics such as HTML Documents, HTML Tags, Heading Tags, etc.
+		HTML heading tags can be used to format plain text so that it renders in a browser as large
+		headings. There are 6 heading tags: h1, h2, h3, h4, h5, and h6. Tag h1 is the largest heading
+		and h6 is the smallest heading.
+		
+		<h2>Paragraph Tag</h2>
+		<p>This is a paragraph. We often separate a long set of sentences with vertical spaces to make
+			the text easier to read. Browsers ignore vertical white spaces and render all the text as one
+			single set of sentences. To force the browser to add vertical spacing, wrap the paragraphs you
+			want to separate with the paragraph tag</p>
+		
+		<!-- Inline Rendering -->
+		<!--
+			The browser ignores line breaks and other white space formatting like tabs and content
+			just flows from left to right and then wraps when there’s no more horizontal space.
+			This style of rendering is referred to as inline. Inline content flows from left to right
+			horizontally the whole width of its parent container and then wraps vertically when there’s
+			no more space.
+		-->
+		<h2>Inline Rendering</h2>
+		This is the first paragraph. The paragraph tag is used to format vertical gaps between long
+		pieces of text like this one.
+		
+		This is the second paragraph. Even though we added a deliberate gap between the paragraph above
+		and this paragraph, by default browsers render them as one contiguous piece of text as shown
+		here on the right.
+		
+		This is the third paragraph. Wrap each paragraph with the paragraph tag to tell browsers to
+		render the gaps.
+		
+		<h3>With paragraph tags</h3>
+		<p>This is the first paragraph. The paragraph tag is used to format vertical gaps between long
+			pieces of text like this one.</p>
+		<p>This is the second paragraph. Even though there is a deliberate white gap between the
+			paragraph above and this paragraph, by default browsers render them as one contiguous piece of
+			text as shown here on the right.</p>
+		<p>This is the third paragraph. Wrap each paragraph with the paragraph tag to tell browsers to
+			render the gaps.</p>
+		
+		<!--
+			Both the paragraph and heading tags add vertical space, and we refer to this style of
+			rendering as BLOCK
+		-->
+		
+		<!-- List tags -->
+		<h2>List Tags</h2>
+		How to join the 1%
+		1. Get a masters in computer science
+		2. Get a $100K+ starting salary job
+		2. Marry a like-minded engineer
+		4. Do great work for a decade
+		
+		<!-- Ordered list tags -->
+		<h3>Ordered List Tag</h3>
+		How to join the 1%
+		<ol>
+			<li>Get a masters in computer science</li>
+			<li>Get a $100K+ starting salary job</li>
+			<li>Marry a like-minded engineer</li>
+			<li>Do great work for a decade</li>
+		</ol>
+		
+		<!-- Unordered list tags -->
+		<h3>Unordered List Tag</h3>
+		My favorite books (in no particular order)
+		<ul>
+			<li>Dune</li>
+			<li>Lord of the Rings</li>
+			<li>Ender's Game</li>
+			<li>Red Mars</li>
+			<li>The Forever War</li>
+		</ul>
+		
+		<h2>Table Tag</h2>
+		<table border="1" width="100%">
+			<!-- Table Head -->
+			<thead>
+				<tr>
+					<th>Quiz</th>
+					<th>Topic</th>
+					<th>Date</th>
+					<th>Grade</th>
+				</tr>
+			</thead>
+			
+			<!-- Table Body -->
+			<tbody>
+				<tr>
+					<td>Q1</td>
+					<td>HTML</td>
+					<td>2/3/21</td>
+					<td>85</td>
+				</tr>
+				<tr>
+					<td>Q2</td>
+					<td>CSS</td>
+					<td>2/10/21</td>
+					<td>90</td>
+				</tr>
+				<tr>
+					<td>Q3</td>
+					<td>JavaScript</td>
+					<td>2/17/21</td>
+					<td>95</td>
+				</tr>
+			</tbody>
+			
+			<!-- Table Footer -->
+			<tfoot>
+				<tr>
+					<td colspan="3">Average</td>
+					<td>90</td>
+				</tr>
+			</tfoot>
+		</table>
+		
+		<!-- Image Tag -->
+		<h2>Image tag</h2>
+		
+		Loading an image from the internet:<br/>
+		<img width="400px"
+		     src="https://www.staradvertiser.com/wp-content/uploads/2021/08/web1_Starship-gap2.jpg"/>
+		
+		<br/><br/>
+		
+		Loading a local image:<br/>
+		<img src="../../res/teslabot.jpg" height="200px"/>
+		
+		<!-- Text Input fields -->
+		<h2>Text fields</h2>
+		<form id="text-fields">
+			<label for="text-fields-username">Username:</label>
+			<input id="text-fields-username"
+			       type="text"
+			       placeholder="jdoe"/>
+			<br/>
+			<label for="text-fields-password">Password:</label>
+			<input id="text-fields-password"
+			       type="password"/>
+			<br/>
+			<label for="text-fields-first-name">First name:</label>
+			<input id="text-fields-first-name"
+			       type="text" placeholder="John">
+			<br/>
+			<label for="text-fields-last-name">Last name:</label>
+			<input id="text-fields-last-name"
+			       type="text" placeholder="Doe">
+			
+			<h2>Other field types</h2>
+			<label for="text-fields-email">Email:</label>
+			<input id="text-fields-email"
+			       type="email"
+			       placeholder="jdoe@somewhere.com"/>
+			<br/>
+			<label for="text-fields-salary-start">Starting salary:</label>
+			<input id="text-fields-salary-start"
+			       type="number"
+			       placeholder="0"/>
+			<br/>
+			<label for="text-fields-rating">Rating:</label>
+			<input id="text-fields-rating"
+			       type="range"
+			       max="5"
+			       value="2"/>
+			<br/>
+			<label for="text-fields-dob">Date of birth: </label>
+			<input id="text-fields-dob"
+			       type="date"
+			       min="1900-01-01"
+			       value="2023-01-28"/>
+			<br/>
+		</form>
+		
+		<!-- Text Boxes -->
+		<h2>Text boxes</h2>
+		<form id="textarea">
+			<label>Biography</label>
+			<br/>
+			<textarea cols="30" rows="10"
+			          placeholder="biography"
+			          title="tooltip">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+					incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+					exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+					dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+					Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+					anim id est laborum.
+				</textarea>
+		</form>
+		
+		<!-- Buttons -->
+		<h3>Buttons</h3>
+		<button type="button">Click me!</button>
+		
+		<!-- Dropdown -->
+		<h3>Dropdowns</h3>
+		<h5>Single-select</h5>
+		<select>
+			<option value="VAL1">Value 1</option>
+			<option value="VAL2" selected>Value 2</option>
+			<option value="VAL3">Value 3</option>
+		</select>
+		
+		<h5>Select one</h5>
+		<label for="select-one-genre">
+			Favorite movie genre:
+		</label><br/>
+		<select id="select-one-genre">
+			<option value="COMEDY">Comedy</option>
+			<option value="DRAMA">Drama</option>
+			<option value="SCIFI" selected>Science Fiction</option>
+			<option value="FANTASY">Fantasy</option>
+		</select>
+		
+		<h5>Multi-select</h5>
+		<select multiple>
+			<option value="VAL1" selected>Value 1</option>
+			<option value="VAL2">Value 2</option>
+			<option value="VAL3" selected>Value 3</option>
+		</select>
+		
+		<h5>Select many</h5>
+		<label for="select-many-genre">
+			Favorite movie genres:
+		</label><br/>
+		<select id="select-many-genre" multiple>
+			<option selected value="COMEDY">Comedy</option>
+			<option value="DRAMA">Drama</option>
+			<option selected value="SCIFI">
+				Science Fiction
+			</option>
+			<option value="FANTASY">Fantasy</option>
+		</select>
+		
+		<!-- File upload -->
+		<h2>File upload</h2>
+		<input type="file">
+		
+		<!-- Radio Buttons -->
+		<h2>Radio buttons</h2>
+		<label>Favorite movie genre:</label>
+		<br/>
+		<!-- name -> radio group name -->
+		<input id="radio-comedy" type="radio"
+		       name="radio-genre"
+		       value="COMEDY"/>
+		<label for="radio-comedy">Comedy</label><br/>
+		<input id="radio-drama" type="radio"
+		       name="radio-genre"
+		       value="DRAMA"/>
+		<label for="radio-drama">Drama</label><br/>
+		<input id="radio-scifi" type="radio" checked
+		       name="radio-genre"
+		       value="SCIFI"/>
+		<label for="radio-scifi">Science Fiction</label><br/>
+		<input id="radio-fantasy" type="radio"
+		       name="radio-genre"
+		       value="FANTASY"/>
+		<label for="radio-fantasy">Fantasy</label><br/>
+		
+		<!-- Checkboxes -->
+		<h2>Checkboxes</h2>
+		<label>Favorite movie genre:</label>
+		<br/>
+		<input id="checkbox-comedy" type="checkbox" checked
+		       name="checkbox-genre"
+		       value="COMEDY"/>
+		<label for="checkbox-comedy">Comedy</label><br/>
+		<input id="checkbox-drama" type="checkbox"
+		       name="checkbox-genre"
+		       value="DRAMA"/>
+		<label for="checkbox-drama">Drama</label><br/>
+		<input id="checkbox-scifi" type="checkbox" checked
+		       name="checkbox-genre"
+		       value="SCIFI"/>
+		<label for="checkbox-scifi">Science Fiction</label><br/>
+		<input id="checkbox-fantasy" type="checkbox"
+		       name="checkbox-genre"
+		       value="FANTASY"/>
+		<label for="checkbox-fantasy">Fantasy</label><br/>
+		
+		<!-- Anchor Tag -->
+		<h2>Anchor tag</h2>
+		Please <a href="https://www.lipsum.com">click here</a> to get dummy text<br/>
+		Checkout my <a href="other-page.html">other page</a>
+		<br/><br/>
+		
+		
+		<!-- EXTRA CREDIT CHALLENGE SECTION -->
+		<a name="top"></a>
+		<h2>Table of content</h2>
+		<ul>
+			<li><a href="#embedding-website">Embedding other websites</a></li>
+			<li><a href="#embedding-youtube">Embedding YouTube videos</a></li>
+			<li><a href="#embedding-slides">Embedding Google slide </a></li>
+			<li><a href="#drawing-rectangles">Drawing Rectangles</a></li>
+			<li><a href="#drawing-circles">Drawing Circles</a></li>
+			<li><a href="#drawing-polygons">Drawing Polygons</a></li>
+		</ul>
+		
+		<!-- iFrame tag - Embedding other websites -->
+		<a name="embedding-website"></a>
+		<h2>Embedding other websites</h2>
+		<a href="#top">Top</a><br/>
+		<iframe width="600"
+		        height="400"
+		        src="https://en.wikipedia.org/wiki/SpaceX">
+		</iframe>
+		
+		<!-- Embedding YouTube iFrame -->
+		<a name="embedding-youtube"></a>
+		<h2>Embedding YouTube</h2>
+		<a href="#top">Top</a><br/>
+		<iframe width="560"
+		        height="315"
+		        src="https://www.youtube.com/embed/7CZTLogln34"
+		        title="YouTube video player"
+		        frameborder="0"
+		        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+		        allowfullscreen>
+		</iframe>
+		
+		<!-- Embedding Google Slides -->
+		<a name="embedding-slides"></a>
+		<h2>Embedding Google slides</h2>
+		<a href="#top">Top</a><br/>
+		<iframe
+				src="https://docs.google.com/presentation/d/e/2PACX-1vQoIYM2gXzRLKt4q5D2-ZahG7zvVcAipkRvj5k9GVLiGDs8NPlLpO3Q08cPUKQbqhL6g8aZp1ZJSwrw/embed?start=false&loop=false&delayms=3000"
+				frameborder="0"
+				width="680"
+				height="418"
+				allowfullscreen="true"
+				mozallowfullscreen="true"
+				webkitallowfullscreen="true">
+		</iframe>
+		
+		<!-- Scalable Vector Graphics -->
+		<!-- Rectangles -->
+		<a name="drawing-rectangles"></a>
+		<h2>Drawing rectangles</h2>
+		<a href="#top">Top</a><br/>
+		<svg width="300" height="100">
+			<rect width="300" height="100"
+			      style="fill:rgb(0,123,255); stroke-width:5; stroke-dasharray: 10; stroke:rgb(0,0,0)"/>
+		</svg>
+		
+		<!-- Circles -->
+		<a name="drawing-circles"></a>
+		<h2>Drawing circles</h2>
+		<a href="#top">Top</a><br/>
+		<svg width="100" height="100">
+			<circle cx="50" cy="50" r="40"
+			        stroke="green" stroke-width="5" fill="yellow"/>
+		</svg>
+		
+		<!-- Polygons -->
+		<a name="drawing-polygons"></a>
+		<h2>Drawing polygons</h2>
+		<a href="#top">Top</a><br/>
+		<svg width="300" height="200">
+			<polygon points="100,10 40,198 190,78 10,78 160,198"
+			         style="fill:lime; stroke:purple; stroke-width:5; fill-rule:evenodd;"/>
+		</svg>
+	</body>
+</html>

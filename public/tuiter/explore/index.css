@@ -1,0 +1,189 @@
+body {
+  width: 100%;
+  margin: 3rem auto;
+  max-width: 70rem;
+  background-color: black;
+}
+
+/* Grid Layout Styling */
+
+
+.wd-inline {
+  display: flex; /* Inline */
+  flex-direction: row; /* Direction of flow */
+  align-items: center; /* Alignment relative to center baseline */
+}
+
+.wd-down {
+  display: flex; /* Inline */
+  flex-direction: column; /* Direction of flow */
+  align-items: flex-start /* Alignment relative to center baseline */
+}
+
+.wd-inline-justify-center {
+  justify-content: center;
+}
+
+.wd-inline-space-between {
+  justify-content: space-between;
+}
+
+/* Search Bar style */
+/* Input field style */
+#input_search_twitter {
+  width: 50%;
+  height: 45px;
+  background: rgb(47, 51, 54);
+  outline: none;
+  border: none;
+  border-radius: 40px;
+  padding: 0 1rem 0 4.2rem;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 0.9rem;
+  color: whitesmoke;
+}
+
+/* Search button style */
+#button_search_twitter {
+  height: 35px;
+  background: none;
+  border: none;
+  outline: none;
+  margin-right: -3.2rem;
+  z-index: 10;
+  position: relative;
+}
+
+#button_search_twitter:hover {
+  cursor: pointer;
+}
+
+/* Settings button style */
+#button_settings_twitter {
+  height: 45px;
+  background: none;
+  border: none;
+  outline: none;
+  margin-left: 2.5rem; /* Stated 12px, but this seemed more appropriate */
+}
+
+#button_settings_twitter:hover {
+  cursor: pointer;
+}
+
+.wd-nav-title {
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  color: rgb(110, 118, 125);
+}
+
+.wd-nav-button {
+  height: 35px;
+  background: none;
+  border: none;
+  outline: none;
+  padding-left: 2.4rem; /* Stated padding all around 16px, but this style worked more for me */
+  padding-right: 2.4rem;
+}
+
+.wd-nav-button:hover {
+  cursor: pointer;
+}
+
+#button_nav_for_you {
+  color: rgb(29, 161, 242);
+  border-bottom: rgb(29, 161, 242);
+  border-bottom-style: solid;
+  border-bottom-width: 0.2rem;
+}
+
+/* Positions */
+.wd-pos-fixed {
+  position: fixed;
+  width: 100%;
+  background-color: rgb(47, 51, 54);
+}
+
+h6 {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  color: gray;
+}
+
+h5 {
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  color: whitesmoke;
+}
+
+.wd-button-sec-C {
+  height: 45px;
+  background: none;
+  border: none;
+  outline: none;
+  margin-left: 9rem;
+  margin-top: 1rem;
+  margin-bottom: 4rem;
+}
+
+.wd-button-sec-C:hover {
+  cursor: pointer;
+}
+
+.wd-sec-C-head {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 0.875rem; /* Decided to go with 14px instead of 13px */
+  color: gray;
+}
+
+.wd-sec-C-title {
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  color: whitesmoke;
+}
+
+.wd-sec-C-foot {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 0.875rem;
+  color: rgb(110, 118, 125);
+}
+
+.wd-button-sec-C-options {
+  height: 45px;
+  background: none;
+  border: none;
+  outline: none;
+  margin-right: 12rem;
+}
+
+.wd-sec-D-head-bold {
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  font-size: 0.875rem;
+  color: whitesmoke;
+}
+
+.wd-sec-D-head {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 0.875rem;
+  color: gray;
+}
+
+.wd-image-style {
+  width: 100px;
+  height: 100px;
+  border-radius: 15px;
+}
+
+.wd-icon-style {
+  width: 15px;
+  height: 15px;
+  border-radius: 50px;
+  padding-right: 6px;
+}
