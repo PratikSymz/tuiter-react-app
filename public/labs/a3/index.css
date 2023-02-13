@@ -542,8 +542,7 @@ p#id-selector-2 {
 }
 
 /* Media Queries */
-@media (min-width: 0px)
-and (max-width: 600px) {
+@media (min-width: 0px) and (max-width: 600px) {
   body {
     background-color: yellow;
   }
@@ -554,8 +553,7 @@ and (max-width: 600px) {
   }
 }
 
-@media (min-width: 600px)
-and (max-width: 1200px) {
+@media (min-width: 600px) and (max-width: 1200px) {
   body {
     background-color: blue;
     color: white;
@@ -567,8 +565,7 @@ and (max-width: 1200px) {
   }
 }
 
-@media (min-width: 1200px)
-and (max-width: 1800px) {
+@media (min-width: 1200px) and (max-width: 1800px) {
   body {
     background-color: red;
     color: white;

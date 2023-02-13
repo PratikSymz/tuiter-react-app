@@ -1,189 +1,87 @@
 body {
-  width: 100%;
-  margin: 3rem auto;
-  max-width: 70rem;
-  background-color: black;
+  background: white;
 }
 
-/* Grid Layout Styling */
-
-
-.wd-inline {
-  display: flex; /* Inline */
-  flex-direction: row; /* Direction of flow */
-  align-items: center; /* Alignment relative to center baseline */
-}
-
-.wd-down {
-  display: flex; /* Inline */
-  flex-direction: column; /* Direction of flow */
-  align-items: flex-start /* Alignment relative to center baseline */
-}
-
-.wd-inline-justify-center {
-  justify-content: center;
-}
-
-.wd-inline-space-between {
-  justify-content: space-between;
-}
-
-/* Search Bar style */
-/* Input field style */
-#input_search_twitter {
-  width: 50%;
-  height: 45px;
-  background: rgb(47, 51, 54);
-  outline: none;
-  border: none;
-  border-radius: 40px;
-  padding: 0 1rem 0 4.2rem;
-  font-family: 'Lato', sans-serif;
-  font-weight: 400;
-  font-size: 0.9rem;
-  color: whitesmoke;
-}
-
-/* Search button style */
-#button_search_twitter {
-  height: 35px;
-  background: none;
-  border: none;
-  outline: none;
-  margin-right: -3.2rem;
-  z-index: 10;
+/* Search bar */
+.form {
   position: relative;
 }
 
-#button_search_twitter:hover {
-  cursor: pointer;
-}
-
-/* Settings button style */
-#button_settings_twitter {
-  height: 45px;
-  background: none;
-  border: none;
-  outline: none;
-  margin-left: 2.5rem; /* Stated 12px, but this seemed more appropriate */
-}
-
-#button_settings_twitter:hover {
-  cursor: pointer;
-}
-
-.wd-nav-title {
-  font-family: 'Lato', sans-serif;
-  font-weight: 700;
-  font-size: 15px;
-  color: rgb(110, 118, 125);
-}
-
-.wd-nav-button {
-  height: 35px;
-  background: none;
-  border: none;
-  outline: none;
-  padding-left: 2.4rem; /* Stated padding all around 16px, but this style worked more for me */
-  padding-right: 2.4rem;
-}
-
-.wd-nav-button:hover {
-  cursor: pointer;
-}
-
-#button_nav_for_you {
-  color: rgb(29, 161, 242);
-  border-bottom: rgb(29, 161, 242);
-  border-bottom-style: solid;
-  border-bottom-width: 0.2rem;
-}
-
-/* Positions */
-.wd-pos-fixed {
-  position: fixed;
+.form-input {
+  height: 55px;
   width: 100%;
-  background-color: rgb(47, 51, 54);
+  text-indent: 50px;
+  border-radius: 25px;
 }
 
-h6 {
-  font-family: 'Lato', sans-serif;
-  font-weight: 400;
+.form-input:focus {
+  box-shadow: none;
+  border-width: 1px;
+  border-color: lightgray;
+}
+
+.wd-search-icon {
+  width: 20px;
+  height: 100%;
+  z-index: 10;
   color: gray;
+  margin-right: -35px
 }
 
-h5 {
-  font-family: 'Lato', sans-serif;
-  font-weight: 700;
-  color: whitesmoke;
+.wd-img-dimension {
+  max-height: 100%;
+  max-width: 100%;
 }
 
-.wd-button-sec-C {
+.wd-text-gray {
+  color: darkgray;
+}
+
+.wd-article-img-dimension {
+  max-height: 70px;
+  max-width: 70px;
+}
+
+.wd-border-radius-5 {
+  border-radius: 5px;
+}
+
+.wd-border-radius-40 {
+  border-radius: 40px;
+}
+
+.wd-account-img-dimension {
   height: 45px;
+  width: 45px
+}
+
+.wd-rounded-btn {
+  color: white;
+  font-size: 1rem;
   background: none;
   border: none;
-  outline: none;
-  margin-left: 9rem;
-  margin-top: 1rem;
-  margin-bottom: 4rem;
+  padding: 0.4rem
 }
 
-.wd-button-sec-C:hover {
+.wd-rounded-btn:hover {
   cursor: pointer;
 }
 
-.wd-sec-C-head {
-  font-family: 'Lato', sans-serif;
-  font-weight: 400;
-  font-size: 0.875rem; /* Decided to go with 14px instead of 13px */
-  color: gray;
+.wd-banner-container {
+  position: relative;
 }
 
-.wd-sec-C-title {
-  font-family: 'Lato', sans-serif;
-  font-weight: 700;
-  font-size: 1rem;
-  color: whitesmoke;
+.wd-banner {
+  width: 100%;
+  height: auto;
+  margin-left: -10px
 }
 
-.wd-sec-C-foot {
-  font-family: 'Lato', sans-serif;
-  font-weight: 400;
-  font-size: 0.875rem;
-  color: rgb(110, 118, 125);
-}
-
-.wd-button-sec-C-options {
-  height: 45px;
-  background: none;
-  border: none;
-  outline: none;
-  margin-right: 12rem;
-}
-
-.wd-sec-D-head-bold {
-  font-family: 'Lato', sans-serif;
-  font-weight: 700;
-  font-size: 0.875rem;
-  color: whitesmoke;
-}
-
-.wd-sec-D-head {
-  font-family: 'Lato', sans-serif;
-  font-weight: 400;
-  font-size: 0.875rem;
-  color: gray;
-}
-
-.wd-image-style {
-  width: 100px;
-  height: 100px;
-  border-radius: 15px;
-}
-
-.wd-icon-style {
-  width: 15px;
-  height: 15px;
-  border-radius: 50px;
-  padding-right: 6px;
+.wd-text-bottom-left {
+  position: absolute;
+  bottom: 0.5rem;
+  left: 1.5rem;
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
 }
