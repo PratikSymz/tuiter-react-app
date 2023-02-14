@@ -1,0 +1,121 @@
+body {
+  background: white;
+}
+
+/* Search bar */
+.form {
+  position: relative;
+}
+
+.form-input {
+  height: 55px;
+  width: 100%;
+  text-indent: 50px;
+  border-radius: 25px;
+  border-width: 0;
+  background-color: #F5F8FA;
+}
+
+.form-input:focus {
+  box-shadow: none;
+  border-width: 0;
+  background-color: #F5F8FA;
+}
+
+.wd-search-icon {
+  width: 20px;
+  height: 100%;
+  z-index: 10;
+  color: gray;
+  margin-right: -35px
+}
+
+.wd-img-dimension {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.wd-text-gray {
+  color: darkgray;
+}
+
+.wd-article-img-dimension {
+  max-height: 70px;
+  max-width: 70px;
+}
+
+.wd-border-radius-5 {
+  border-radius: 5px;
+}
+
+.wd-border-radius-40 {
+  border-radius: 40px;
+}
+
+.wd-account-img-dimension {
+  height: 45px;
+  width: 45px
+}
+
+.wd-rounded-btn {
+  color: white;
+  font-size: 1rem;
+  background: none;
+  border: none;
+  padding: 0.5rem 0.8rem 0.5rem 0.8rem;
+}
+
+.wd-rounded-btn:hover {
+  cursor: pointer;
+}
+
+.wd-banner-container {
+  position: relative;
+}
+
+.wd-banner {
+  width: 100%;
+  height: auto;
+  margin-left: -10px
+}
+
+.wd-text-bottom-left-title {
+  position: absolute;
+  bottom: 3.5rem;
+  left: 1.5rem;
+  color: white;
+  font-size: 0.9rem;
+}
+
+.wd-text-bottom-left-body {
+  position: absolute;
+  bottom: 0.5rem;
+  left: 1.5rem;
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.wd-nav-link-text {
+  color: #14171A;
+}
+
+.wd-follow-bg {
+  background-color: #14171A;
+}
+
+.nav .nav-item {
+  position: relative;
+}
+
+.nav .nav-item .active::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background-color: #1DA1F2;
+  width: 50%;
+  content: "";
+  height: 4px;
+}
