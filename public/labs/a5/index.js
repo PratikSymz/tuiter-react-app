@@ -265,6 +265,107 @@ const init = () => {
 			'color', 'blue'
 	)
 	
+	/* Getting and setting attributes */
+	console.log('Get and set attributes');
+	const getIdAttr = $('#get-id-attr');
+	const attrId = getIdAttr.attr('id');
+	console.log(attrId);
+	
+	const setClassAttr = $('#set-class-attr');
+	setClassAttr.attr('class', 'class-0');
+	
+	/* Adding and removing classes */
+	const addClass1Example = $('#add-class-1');
+	addClass1Example.addClass('class-1');
+	
+	const removeClass1Example = $('#remove-class-1');
+	removeClass1Example.removeClass('class-2');
+	
+	/* Hiding and showing content */
+	const hideMe = $('#hide-me');
+	hideMe.hide();
+	
+	const showMe = $('#show-me');
+	showMe.show();
+	
+	/* Creating new elements */
+	const newLineItem = $("<li>Line item 1</li>");
+	const anotherLineItem = $("<li>Line item 2</li>");
+	
+	/* Appending new elements */
+	const ul = $('#append-new-elements');
+	ul.append(newLineItem);
+	ul.append(anotherLineItem);
+	
+	/* Removing and emptying content */
+	const removeLi = $('#remove-this');
+	removeLi.remove();
+	
+	const emptyUl = $('#empty-this');
+	emptyUl.empty();
+	
+	/* Changing content */
+	const changeThisText = $("#change-this-text");
+	changeThisText.html('New Text');
+	
+	const changeThisHtml = $("#change-this-html");
+	changeThisHtml.html(`
+			<li>Line item A</li>
+			<li>Line item B</li>
+			<li>Line item C</li>
+	`);
+	
+	/* Navigating up and down the DOM tree */
+	// 1. The 'parents()' function returns an array of elements that are
+	// parents of an element all the way up to the root of the HTML document
+	// 2. The 'find()' function returns an array of elements that are children of
+	// the current element.
+	console.log('Navigating the DOM Hierarchy');
+	
+	const child2 = $('#child-2');
+	const parent1 = child2.parents('#parent');
+	// Color all parents of child2, upto 'parent' RED
+	parent1.css('background-color', 'red')
+	.css('color', 'white');
+	
+	const parent = $('#parent');
+	const child = parent.find('#child-2');
+	child.css('background-color', 'blue');
+	
+	/* Handling click events */
+	const handleClick = () => console.log('Handle click');
+	const clickable = $('.clickable');
+	clickable.click(handleClick);
+	
+	/* Event target */
+	const handleEventTarget = (event) => {
+		const target = event.target;
+		console.log(target);
+		$(target)
+			.css('background-color', 'blue')
+			.css('color', 'white');
+	};
+	
+	const eventTarget = $('#event-target');
+	eventTarget.click(handleEventTarget);
+	
+	
+	/* Hiding and showing content */
+	let hideBtn, showBtn, hideShowHeader;
+	hideBtn = $('#hide');
+	showBtn = $('#show');
+	hideShowHeader = $('#hide-show');
+	
+	const hideHandler = () => {
+		hideShowHeader.hide();
+	}
+	
+	const showHandler = () => {
+		hideShowHeader.show();
+	}
+	
+	hideBtn.click(hideHandler);
+	showBtn.click(showHandler);
 }
 
 // The jQuery script declares global function called jQuery and its alias $
