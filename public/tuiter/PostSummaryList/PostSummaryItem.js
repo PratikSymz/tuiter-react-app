@@ -1,14 +1,14 @@
 const PostSummaryItem = (post) => {
 	let base = `
 			<li class="list-group-item list-group-item-action
-									d-flex justify-content-center align-items-center">
+									d-flex justify-content-center align-items-center p-3">
 				<div class="ms-2 me-auto">
 					<div class="fw-normal wd-text-gray">${post.topic}</div>
 	`;
 	
 	if (post.userName !== null) {
 		base += `
-				<div class="fw-bold">
+				<div class="fw-bold text-white">
 					${post.userName} <i class="fas fa-check-circle fa-1x"></i>
 		`;
 		
@@ -25,7 +25,7 @@ const PostSummaryItem = (post) => {
 	
 	if (post.title !== null) {
 		base += `
-				<div class="fw-bold">${post.title}</div>
+				<div class="fw-bold text-white">${post.title}</div>
 		`;
 	}
 	

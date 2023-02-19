@@ -1,28 +1,28 @@
-const NavigationSidebar = () => {
+const NavigationSidebar = (active) => {
 	return (`
 			<div class="align-items-center">
 				<ul class="list-group">
 					<li class="list-group-item border-top-0 border-start-0 border-end-0">
-						<span><i class="fab fa-twitter fa-2x"></i></span>
+						<span><i class="fab fa-twitter fa-2x" style="color: white"></i></span>
 					</li>
-					<li class="list-group-item list-group-item-action">
+					<a href="../home/index.html" class="list-group-item list-group-item-action
+						${active === 'home' ? 'active': ''}">
 						<div class="row">
 							<div class="col-1 me-1"><i
 									class="fas fa-home fa-1x pe-2"></i></div>
-							<div
-									class="d-none d-xl-block col-xl d-xxl-block col-xxl">Home
+							<div class="d-none d-xl-block col-xl d-xxl-block col-xxl">Home
 							</div>
 						</div>
-					</li>
-					<li class="list-group-item list-group-item-action active">
+					</a>
+					<a href="../explore/index.html" class="list-group-item list-group-item-action
+						${active === 'explore' ? 'active': ''}">
 						<div class="row">
 							<div class="col-1 me-1"><i
 									class="fas fa-hashtag fa-1x pe-2"></i></div>
-							<div
-									class="d-none d-xl-block col-xl d-xxl-block col-xxl">Explore
+							<div class="d-none d-xl-block col-xl d-xxl-block col-xxl">Explore
 							</div>
 						</div>
-					</li>
+					</a>
 					<li class="list-group-item list-group-item-action">
 						<div class="row">
 							<div class="col-1 me-1"><i

@@ -21,7 +21,7 @@ const ExploreComponent = () => {
 		<!-- Navigation Bar -->
 		<div class="row align-items-center">
 			<div
-				class="w-100 n-1 col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6 mt-3"
+				class="w-100 n-1 col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 mt-3"
 				style="margin-left: -10px">
 				<ul class="nav nav-tabs">
 					<li class="nav-item">
@@ -46,10 +46,10 @@ const ExploreComponent = () => {
 		<!-- Image banner -->
 		<div class="row align-items-center">
 			<div
-				class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6 mt-3 wd-banner wd-banner-container">
+				class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 mt-3 wd-banner wd-banner-container">
 				<img src="res/starship_banner.webp"
 				     class="wd-img-dimension rounded-0 rounded-top">
-				<div class="wd-text-bottom-left">SpaceX's Starship</div>
+				<div class="wd-text-bottom-left ps-3">SpaceX's Starship</div>
 			</div>
 		</div>
 		
