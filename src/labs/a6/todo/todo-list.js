@@ -1,5 +1,5 @@
 import TodoItem from "./todo-item";
-import Todos from "./todos";
+import todos from "./todos.json";
 
 const TodoList = () => {
 	return (
@@ -7,7 +7,7 @@ const TodoList = () => {
 				<h3>Todo List</h3>
 				<ul>
 					{
-						Todos.map(todo => {
+						todos.map(todo => {
 							return <TodoItem todo={todo}/>
 						})
 					}
