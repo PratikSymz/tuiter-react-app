@@ -1,0 +1,32 @@
+[
+	{
+		"_id": 123,
+		"avatarIcon": "java.png",
+		"userName": "Java",
+		"handle": "java"
+	},
+	{
+		"_id": 234,
+		"avatarIcon": "relativity.jpg",
+		"userName": "Relativity Space",
+		"handle": "relativityspace"
+	},
+	{
+		"_id": 345,
+		"avatarIcon": "virgin.svg",
+		"userName": "Virgin Galactic",
+		"handle": "virgingalactic"
+	},
+	{
+		"_id": 456,
+		"avatarIcon": "nasa.png",
+		"userName": "NASA",
+		"handle": "nasa"
+	},
+	{
+		"_id": 567,
+		"avatarIcon": "tesla.png",
+		"userName": "Tesla",
+		"handle": "tesla"
+	}
+]

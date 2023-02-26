@@ -1,0 +1,20 @@
+.wd-text-gray {
+  color: darkgray;
+}
+
+.wd-border-radius-40 {
+  border-radius: 40px;
+}
+
+.wd-account-img-dimension {
+  height: 45px;
+  width: 45px
+}
+
+.wd-rounded-btn {
+  color: white;
+  font-size: 1rem;
+  background: none;
+  border: none;
+  padding: 0.4rem
+}

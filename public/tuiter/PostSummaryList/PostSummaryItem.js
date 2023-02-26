@@ -39,7 +39,7 @@ const PostSummaryItem = (post) => {
 				</div>
 					<span>
 						<img src="${post.image}"
-					           class="wd-article-img-dimension wd-border-radius-5 ms-2">
+					           class="wd-article-img-dimension wd-border-radius-5 ms-2"/>
 					</span>
 			</li>
 	`;

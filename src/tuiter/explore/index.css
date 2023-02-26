@@ -1,0 +1,32 @@
+.wd-search-icon {
+  width: 20px;
+  height: 100%;
+  z-index: 10;
+  color: black;
+  margin-right: -35px;
+  font-size: 1.2rem;
+}
+
+.wd-banner-container {
+  position: relative;
+}
+
+.wd-banner {
+  width: 100%;
+  height: auto;
+  margin-left: -10px
+}
+
+.wd-img-dimension {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.wd-text-bottom-left {
+  position: absolute;
+  bottom: 0.5rem;
+  left: 1.5rem;
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+}

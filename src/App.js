@@ -7,13 +7,13 @@ import {BrowserRouter as Router, Route, Routes} from "react-router-dom";
 function App() {
 	return (
 			<Router>
-				<div className="container">
+				<div className="container-fluid mb-5">
 					<Routes>
 						<Route path="/hello"
 						       element={<HelloWorld/>}/>
 						<Route index
 						       element={<Labs/>}/>
-						<Route path="/tuiter"
+						<Route path="/tuiter/*"
 						       element={<Tuiter/>}/>
 					</Routes>
 				</div>
