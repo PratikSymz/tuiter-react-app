@@ -1,30 +1,41 @@
 import React from "react";
+import {Link} from "react-router-dom";
+import {useLocation} from "react-router";
 
-const NavigationSidebar = ({
-	active = 'explore'
-}) => {
+const NavigationSidebar = () => {
+	const {pathname} = useLocation();
+	const paths = pathname.split('/')
+	const active = paths[2];
 	return (
 			<>
 				<ul className="list-group">
 					<li className="list-group-item border-top-0 border-start-0 border-end-0">
 						<span><i className="bi bi-twitter" style={{'fontSize': '2rem'}}></i></span>
 					</li>
-					<a className={`list-group-item list-group-item-action ${active === 'home' ? 'active' : ''}`}>
+					<Link to="/tuiter/home" className={`list-group-item list-group-item-action ${active === 'home' ? 'active' : ''}`}>
 						<div className="row">
 							<div className="col-1 me-1"><i
 									className="bi bi-house-door-fill pe-2" style={{'fontSize': '1rem'}}></i></div>
 							<div className="d-none d-xl-block col-xl d-xxl-block col-xxl">Home
 							</div>
 						</div>
-					</a>
-					<a className={`list-group-item list-group-item-action ${active === 'explore' ? 'active' : ''}`}>
+					</Link>
+					<Link to="/tuiter/explore" className={`list-group-item list-group-item-action ${active === 'explore' ? 'active' : ''}`}>
 						<div className="row">
 							<div className="col-1 me-1"><i
 									className="bi bi-hash pe-2" style={{'fontSize': '1.1rem'}}></i></div>
 							<div className="d-none d-xl-block col-xl d-xxl-block col-xxl">Explore
 							</div>
 						</div>
-					</a>
+					</Link>
+					<Link to="/" className="list-group-item list-group-item-action">
+						<div className="row">
+							<div className="col-1 me-1"><i
+									className="bi bi-terminal pe-2" style={{'fontSize': '1rem'}}></i></div>
+							<div className="d-none d-xl-block col-xl d-xxl-block col-xxl">Labs
+							</div>
+						</div>
+					</Link>
 					<a className={`list-group-item list-group-item-action ${active === 'notifications' ? 'active' : ''}`}>
 						<div className="row">
 							<div className="col-1 me-1"><i
@@ -76,7 +87,7 @@ const NavigationSidebar = ({
 				</ul>
 				<div>
 					<button
-							className="w-100 wd-border-radius-40 mt-3 p-2 bg-primary wd-rounded-btn">
+							className="btn btn-primary rounded-pill w-100 wd-border-radius-40 mt-3 p-2">
 						Tweet
 					</button>
 				</div>

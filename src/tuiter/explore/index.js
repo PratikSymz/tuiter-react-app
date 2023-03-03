@@ -8,7 +8,7 @@ const ExploreComponent = () => {
 				{/* Search field and cog */}
 				<div className="row align-items-center">
 					<div className="col-xxl-10 col-xl-10 col-lg-10 col-md-10 col-sm-10 col-xs-10">
-						<div className="row align-items-center ps-2">
+						<div className="d-flex align-items-center ps-1">
 							<i className="bi bi-search wd-search-icon"></i>
 							<input type="text" className="form-control form-input rounded-pill"
 							       placeholder="Search Twitter"/>
@@ -16,7 +16,7 @@ const ExploreComponent = () => {
 					</div>
 					<div className="col-xxl-2 col-xl-2 col-lg-2 col-md-2 col-sm-2 col-xs-2 pe-3">
 						<a href="explore-settings.html" style={{'textDecoration': 'none'}}>
-							<i className="fa fa-cog fa-2x d-flex justify-content-end text-primary"></i>
+							<i className="bi bi-gear-fill d-flex justify-content-end text-primary pe-2" style={{'fontSize': '1.6rem'}}></i>
 						</a>
 					</div>
 				</div>

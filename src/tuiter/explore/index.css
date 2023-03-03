@@ -1,9 +1,28 @@
+/* Search bar */
+.form {
+  position: relative;
+}
+
+.form-input {
+  height: 55px;
+  width: 100%;
+  text-indent: 50px;
+  border-radius: 25px;
+}
+
+.form-input:focus {
+  box-shadow: none;
+  border-width: 1px;
+  border-color: lightgray;
+}
+
 .wd-search-icon {
   width: 20px;
   height: 100%;
   z-index: 10;
   color: black;
-  margin-right: -35px;
+  position: relative;
+  left: 10px;
   font-size: 1.2rem;
 }
 

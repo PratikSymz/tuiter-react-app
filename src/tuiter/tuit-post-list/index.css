@@ -1,0 +1,60 @@
+.wd-post-content {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.wd-post-content img.wd-post-image {
+  max-height: 100%;
+  max-width: 100%;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-color: gray;
+  border-width: 1px;
+  border-bottom-width: 0;
+  border-style: solid;
+}
+
+.wd-post-content .wd-post-container .wd-post-detail {
+  margin-left: 65px;
+  position: relative;
+  margin-top: -3rem;
+}
+
+.wd-post-content .wd-post-container .wd-post-detail .wd-reaction {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.wd-post-content .wd-post-container .wd-post-detail .wd-post-comment {
+  display: inline-flex;
+  margin: 10px auto;
+  width: 100%;
+}
+
+.wd-post-content .wd-post-container .wd-post-detail .wd-post-comment img.wd-profile-photo-sm {
+  margin-right: 10px;
+}
+
+
+img.wd-profile-photo-md {
+  height: 45px;
+  width: 45px;
+}
+
+.wd-tweet-link {
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-color: gray;
+  border-width: 1px;
+  border-style: solid;
+}
+
+.wd-font-size-small {
+  font-size: 0.8rem;
+  position: relative;
+  bottom: 2.5px;
+  margin-left: 1.5px;
+}
