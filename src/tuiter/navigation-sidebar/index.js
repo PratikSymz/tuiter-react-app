@@ -36,7 +36,7 @@ const NavigationSidebar = () => {
 							</div>
 						</div>
 					</Link>
-					<a className={`list-group-item list-group-item-action ${active === 'notifications' ? 'active' : ''}`}>
+					<a href={() => false} className={`list-group-item list-group-item-action ${active === 'notifications' ? 'active' : ''}`}>
 						<div className="row">
 							<div className="col-1 me-1"><i
 									className="bi bi-bell-fill pe-2" style={{'fontSize': '1rem'}}></i></div>
@@ -44,7 +44,7 @@ const NavigationSidebar = () => {
 							</div>
 						</div>
 					</a>
-					<a className={`list-group-item list-group-item-action ${active === 'messages' ? 'active' : ''}`}>
+					<a href={() => false} className={`list-group-item list-group-item-action ${active === 'messages' ? 'active' : ''}`}>
 						<div className="row">
 							<div className="col-1 me-1"><i
 									className="bi bi-envelope-fill pe-2" style={{'fontSize': '1rem'}}></i></div>
@@ -52,7 +52,7 @@ const NavigationSidebar = () => {
 							</div>
 						</div>
 					</a>
-					<a className={`list-group-item list-group-item-action ${active === 'bookmarks' ? 'active' : ''}`}>
+					<a href={() => false} className={`list-group-item list-group-item-action ${active === 'bookmarks' ? 'active' : ''}`}>
 						<div className="row">
 							<div className="col-1 me-1"><i
 									className="bi bi-bookmark-fill pe-2" style={{'fontSize': '1rem'}}></i></div>
@@ -60,7 +60,7 @@ const NavigationSidebar = () => {
 							</div>
 						</div>
 					</a>
-					<a className={`list-group-item list-group-item-action ${active === 'lists' ? 'active' : ''}`}>
+					<a href={() => false} className={`list-group-item list-group-item-action ${active === 'lists' ? 'active' : ''}`}>
 						<div className="row">
 							<div className="col-1 me-1"><i
 									className="bi bi-list-ul pe-2" style={{'fontSize': '1.1rem'}}></i></div>
@@ -68,7 +68,7 @@ const NavigationSidebar = () => {
 							</div>
 						</div>
 					</a>
-					<a className={`list-group-item list-group-item-action ${active === 'profile' ? 'active' : ''}`}>
+					<a href={() => false} className={`list-group-item list-group-item-action ${active === 'profile' ? 'active' : ''}`}>
 						<div className="row">
 							<div className="col-1 me-1"><i
 									className="bi bi-person-fill pe-2" style={{'fontSize': '1.1rem'}}></i></div>
@@ -76,7 +76,7 @@ const NavigationSidebar = () => {
 							</div>
 						</div>
 					</a>
-					<a className={`list-group-item list-group-item-action ${active === 'more' ? 'active' : ''}`}>
+					<a href={() => false} className={`list-group-item list-group-item-action ${active === 'more' ? 'active' : ''}`}>
 						<div className="row">
 							<div className="col-1 me-1"><i
 									className="bi bi-three-dots pe-2" style={{'fontSize': '1.1rem'}}></i></div>
