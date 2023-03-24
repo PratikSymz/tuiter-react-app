@@ -9,12 +9,9 @@ function App() {
 			<Router>
 				<div className="mb-5">
 					<Routes>
-						<Route path="/hello"
-						       element={<HelloWorld/>}/>
-						<Route index
-						       element={<Labs/>}/>
-						<Route path="/tuiter/*"
-						       element={<Tuiter/>}/>
+						<Route path="/hello" element={<HelloWorld/>}/>
+						<Route path="/*" element={<Labs/>}/>
+						<Route path="/tuiter/*" element={<Tuiter/>}/>
 					</Routes>
 				</div>
 			</Router>
