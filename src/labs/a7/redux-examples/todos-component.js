@@ -8,20 +8,21 @@ const Todos = () => {
 	
 	// Create to-do local state variable
 	const [todo, setTodo] = useState({do: ''});
-	// Handle keystroke changes in input field
-	const todoChangeHandler = (event) => {
-		const doValue = event.target.value;
-		const newTodo = {
-			do: doValue
-		};
-		
-		setTodo(newTodo);
-	};
 	
-	const dispatch = useDispatch();
-	const createTodoClickHandler = () => {
-		dispatch(addTodo(todo))
-	}
+	// Handle keystroke changes in input field
+	// const todoChangeHandler = (event) => {
+	// 	const doValue = event.target.value;
+	// 	const newTodo = {
+	// 		do: doValue
+	// 	};
+	//
+	// 	setTodo(newTodo);
+	// };
+	//
+	// const dispatch = useDispatch();
+	// const createTodoClickHandler = () => {
+	// 	dispatch(addTodo(todo))
+	// }
 	
 	const deleteTodoClickHandler = (index) => {
 		dispatch(deleteTodo(index))
