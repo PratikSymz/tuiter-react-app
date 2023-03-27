@@ -1,8 +1,11 @@
 import React from "react";
-import whoList from './who.json';
 import WhoToFollowListItem from "./who-to-follow-list-item";
+import {useSelector} from "react-redux";
 
 const WhoToFollowList = () => {
+	// Extract the whoList from the provider (store) providing the reducer states
+	const whoList = useSelector(state => state.who);
+	
 	return (
 			<div className="align-items-center">
 				<ul className="list-group">

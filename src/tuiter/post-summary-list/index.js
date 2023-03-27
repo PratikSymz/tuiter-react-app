@@ -1,6 +1,6 @@
 import React from "react";
-import postList from './post.json';
 import PostSummaryItem from "./post-summary-item";
+import postList from "./post.json";
 
 const PostSummaryList = () => {
 	return (

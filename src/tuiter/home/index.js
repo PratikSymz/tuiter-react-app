@@ -1,8 +1,8 @@
 import React from "react";
-import TuitPostList from "../tuit-post-list";
+import TuitsList from "../tuits/TuitsList";
 
 const HomeComponent = () => {
-	return <TuitPostList/>;
+	return <TuitsList/>;
 };
 
 export default HomeComponent;
