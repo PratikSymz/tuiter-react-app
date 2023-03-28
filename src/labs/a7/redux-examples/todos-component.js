@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React from "react";
 import {useDispatch, useSelector} from "react-redux";
 import {deleteTodo, toggleTodo} from "./reducers/todos-reducer";
 
@@ -7,7 +7,7 @@ const Todos = () => {
 	const todos = useSelector((state) => state.todos);
 	
 	// Create to-do local state variable
-	const [todo, setTodo] = useState({do: ''});
+	// const [todo, setTodo] = useState({do: ''});
 	
 	// Handle keystroke changes in input field
 	// const todoChangeHandler = (event) => {
