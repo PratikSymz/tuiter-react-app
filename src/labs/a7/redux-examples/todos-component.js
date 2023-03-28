@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import {useDispatch, useSelector} from "react-redux";
-import {addTodo, deleteTodo, toggleTodo} from "./reducers/todos-reducer";
+import {deleteTodo, toggleTodo} from "./reducers/todos-reducer";
 
 const Todos = () => {
 	// Retrieve todos from reducer state
@@ -19,7 +19,7 @@ const Todos = () => {
 	// 	setTodo(newTodo);
 	// };
 	//
-	// const dispatch = useDispatch();
+	const dispatch = useDispatch();
 	// const createTodoClickHandler = () => {
 	// 	dispatch(addTodo(todo))
 	// }

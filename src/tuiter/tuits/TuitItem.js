@@ -1,6 +1,8 @@
 import React from "react";
 import "./index.css";
 import TuitStats from "./TuitStats";
+import {useDispatch} from "react-redux";
+import {deleteTuit} from "../reducers/tuits-reducer";
 
 const TuitItem = ({
 	key = 101,
@@ -17,6 +19,11 @@ const TuitItem = ({
 		"liked": true
 	}
 }) => {
+	const dispatch = useDispatch();
+	const deleteTuitHandler = (id) => {
+		dispatch(deleteTuit(id));
+	}
+	
 	return (
 			<li key={key} className="list-group-item list-group-item-action wd-post-content p-3">
 				<div className="wd-post-container">
@@ -25,12 +32,13 @@ const TuitItem = ({
 					<div className="wd-post-detail">
 						<div className="align-items-center d-inline-block">
 							<span className="fw-bold text-white">{tuit.userName}</span>
-							<i className="fas fa-check-circle text-white fa-1x"></i>
+							<i className="bi bi-patch-check-fill text-white fa-1x ms-1 me-1"></i>
 							<span className="fw-normal ms-1">{tuit.handle}</span>
 							<span className="fw-normal"> . {tuit.timeAgo}</span>
 						</div>
 						<span className="pull-right">
-								<i className="fas fas fa-ellipsis-h fa-1x"></i>
+								<i className="bi bi-x-lg fa-1x float-end"
+								   onClick={() => deleteTuitHandler(tuit._id)}></i>
 						</span>
 						
 						<div className="fw-normal text-white pt-1">{tuit.tweet}</div>
