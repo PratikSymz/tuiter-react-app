@@ -2,7 +2,6 @@ import React, {useState} from "react";
 import {Button} from "react-bootstrap";
 import {useDispatch, useSelector} from "react-redux";
 import {useNavigate} from "react-router";
-import nav from "../../nav";
 import {editProfile} from "../reducers/profile-reducer";
 
 const EditProfileComponent = () => {
