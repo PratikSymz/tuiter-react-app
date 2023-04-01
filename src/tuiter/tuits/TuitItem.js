@@ -2,7 +2,7 @@ import React from "react";
 import "./index.css";
 import TuitStats from "./TuitStats";
 import {useDispatch} from "react-redux";
-import {deleteTuit} from "../reducers/tuits-reducer";
+import {deleteTuitThunk} from "../../services/tuits-thunks";
 
 const TuitItem = ({
 	key = 101,
@@ -13,19 +13,20 @@ const TuitItem = ({
 		"handle": "@elonmusk",
 		"timeAgo": "23h",
 		"tweet": "You want to wake up in the morning and think that the future is going to be great - and that's what a spacefaring civilization is all about. It's about believing in the future will be better than the past. And I can't think of anything more exciting than goign out there and being among the stars.",
-		"numComments": "4.2K",
-		"numRetweets": "3.5K",
-		"numLikes": "37.5K",
-		"liked": true
+		"numComments": 4220,
+		"numRetweets": 3502,
+		"numLikes": 37567,
+		"liked": true,
+		"numDislikes": 0
 	}
 }) => {
 	const dispatch = useDispatch();
 	const deleteTuitHandler = (id) => {
-		dispatch(deleteTuit(id));
+		dispatch(deleteTuitThunk(id));
 	}
 	
 	return (
-			<li key={key} className="list-group-item list-group-item-action wd-post-content p-3">
+			<li key={key} className="list-group-item wd-post-content p-3">
 				<div className="wd-post-container">
 					<img src={require(`../res/${tuit.profileImg}`)} alt=""
 					     className="wd-profile-photo-md rounded-circle pull-left"/>
